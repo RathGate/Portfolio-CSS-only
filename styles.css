@@ -1,0 +1,54 @@
+@import "nav.css";
+@import "hero-section.css";
+@import "socials.css";
+
+
+:root {
+    --color-yellow: #ffd600;
+    --color-orange: #ff7a00;
+    --color-red: rgb(255, 0, 105);
+    --color-purple: #d300c5;
+    --color-blue: #7638fa;
+    --background-color: rgb(19, 19, 19);
+    --screen-height: calc(100vh - 60px);
+    --color-gradient: linear-gradient(45deg,
+    var(--color-yellow),
+    var(--color-orange),
+    var(--color-red),
+    var(--color-purple) 60%,
+    var(--color-blue) 85%);
+}
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+}
+main {
+    height: 100%;
+    width: 80%;
+    margin: 60px auto 0;
+}
+section {
+    height: var(--screen-height);
+}
+.flex-hz {
+    display: flex;
+    flex-direction: column;
+}
+.flex-vt {
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+}

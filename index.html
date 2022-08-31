@@ -6,53 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/65cde144bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Questrial&display=swap" rel="stylesheet">
     <title>RathGate's Portfolio</title>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="menu-title"><div class="icon yellow"><span></span></div><a href="" target="_blank">HOME</a></div>
-            <div class="menu-title"><div class="icon orange"><span></span></div><a href="" target="_blank">ABOUT</a></div>
-            <div class="menu-title"><div class="icon red"><span></span></div><a href="" target="_blank">WORK</a></div>
-            <div class="menu-title"><div class="icon blue"><span></span></div><a href="" target="_blank">SKILLS</a></div>
-            <div class="menu-title"><div class="icon blue"><span></span></div><a href="" target="_blank">CONTACT</a></div>
+        <nav class="nav-links">
+            <a href="#home"><div class="nav-link"><div class="nav-link__icon"></div>HOME</div></a>
+            <a href="#about-skills"><div class="nav-link"><div class="nav-link__icon"></div>ABOUT</div></a>
+            <a href=""><div class="nav-link"><div class="nav-link__icon"></div>WORK</div></a>
+            <a href=""><div class="nav-link"><div class="nav-link__icon"></div>CONTACT</div></a>
         </nav>
 
     </header>
-    <article class="socials">
-        <div class="twitter"><a href="https://twitter.com/rathgate" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
-        <div class="github"><a href="https://github.com/rathgate" target="_blank"><i class="fa-brands fa-github"></i></a></div>
-        <div class="instagram"><a href="https://www.instagram.com/rathgate_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>        </div>
-        <div class="linkedin"><a><i class="fa-brands fa-linkedin"></i></a></div>
-    </article>
+    <aside class="social-links">
+        <div class="tw-slide"><a href="https://twitter.com/rathgate" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
+        <div class="gh-slide"><a href="https://github.com/rathgate" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+        <div class="in-slide"><a href="https://www.instagram.com/rathgate_/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+        <div class="lk-slide"><a><i class="fa-brands fa-linkedin"></i></a></div>
+    </aside>
     <main>
-        <section class="hero-section">
+        <section id="home" class="hero-section">
             <div class="hero-subsection">
-                <div class="flex-vt">
+                <div class="main-title">
                     <div class="indent-container">
-                        <div class="indent first">></div>
-                        <div class="indent second">></div>
-                        <div class="indent third">></div>
+                        <div class="indent-icon">></div>
+                        <div class="indent-icon">></div>
+                        <div class="indent-icon">></div>
                     </div>
-                    <div class="flex-hz">
-                        <span class="firstname">MARIANNE</span><span class="lastname">CORBEL</span>
+                    <div class="name-container">
+                        <span class="firstname">MARIANNE</span><br><span class="lastname">CORBEL</span>
                     </div>
                 </div>
-                <div class="test"></div>
-                <div class="text">FIRST-YEAR COMPUTER SCIENCE STUDENT <i class="fa-solid fa-code first"></i><br>
+                <div class="title-border"></div>
+                <div class="title-subtitle">FIRST-YEAR COMPUTER SCIENCE STUDENT <i class="fa-solid fa-code first"></i><br>
                 INTERESTED IN BOTH SOFTWARE AND WEB DEVELOPMENT <i class="fa-solid fa-code second"></i></div>
             </div>
-            <div class="stars">
-                <div class="star first"></div>
-                <div class="star second"></div>
-                <div class="star third"></div>
-                <div class="star fourth"></div>
-                <div class="star fifth"></div>
+            <div class="stars-background">
+                <div class="star-drop"></div>
+                <div class="star-drop"></div>
+                <div class="star-drop"></div>
+                <div class="star-drop"></div>
+                <div class="star-drop"></div>
             </div>
         </section>
-        <!-- <section class="skills-section">
-            Hello
-        </section> -->
+
+
+
+        <section id="about-skills" class="about-skills-section">
+            <div class="about-subsection">
+                <h2 class="section-title">ABOUT <i class="fa-solid fa-code"></i></h2>
+                <article class="about-container">
+                    <div class="profile-picture">
+                        <div class="pfp-container">
+                            <div class="dots"></div>
+                            <div class="dots"></div>
+                            <div class="dots"></div>
+                            <div class="dots"></div>
+                            <div class="dots"></div>
+                            <input id="pfp-checkbox" class="invisible-checkbox" type="checkbox">
+                            <div class="tichat-container">
+                            <div class="tichat scarlett"><img src="img/bleurp.png"></div>
+                            <div class="tichat teba"><img src="img/aaa.png"></div>
+                            <div class="tichat serkhan"><img src="img/boop.png"></div>
+                        </div>
+                        <label for="pfp-checkbox"><img class="pfp-img circle-animate" src="img/pfp.png" alt="ma-grosse-tête.png"></label>                  
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>WHO AM I ?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptates saepe aperiam culpa praesentium itaque magni quis repudiandae error architecto aliquam, nostrum perspiciatis eius debitis facere? Illum ducimus excepturi alias.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minima ut, porro non ad cupiditate laborum doloribus maxime pariatur numquam error expedita rerum sequi. Odio reiciendis obcaecati voluptates quasi officiis?</p>
+                        <label for="tldr-input"><h3 class="link">>> LONG STORY SHORT <<</h3></label>
+                        <input id="tldr-input" type="checkbox" class="invisible-checkbox">
+                        <p id="tldr-text" class="tldr-text">>>> 23 YEARS OLD // AIX-EN-PROVENCE, FRANCE // STUDYING AT YNOV-AIX</p>
+                    </div>    
+                </article>
+            </div>
+            <div class="skills-subsection">
+                <h2 class="section-title">SKILLS <i class="fa-solid fa-code"></i></h2>
+                <article class="skill-container__large">
+                    <div class="skill-container__small">
+                        <div class="skill-type soft-type">SOFTWARE DEVELOPMENT</div>                        
+                        <div class="bunch software">
+                            <div class="skill link"><i class="devicon devicon-c-plain"></i><span class="skill-description">BEGINNER</span></div>
+                            <div class="skill link"><i class="devicon devicon-java-plain"></i><span class="skill-description">BEGINNER</span></div>
+                            <div class="skill link"><i class="devicon devicon-python-plain"></i><span class="skill-description">INTERMEDIATE</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-border"></div>
+                    <div class="skill-container__small">
+                        <div class="skill-type web-type">WEB DEVELOPMENT</div>
+                        <div class="bunch web">
+                            <div class="skill link"><i class="devicon devicon-html5-plain"></i><span class="skill-description">ADVANCED</span></div>
+                            <div class="skill link"><i class="devicon devicon-css3-plain"></i><span class="skill-description">ADVANCED</span></div>
+                            <div class="skill link"><i class="devicon devicon-javascript-plain"></i><span class="skill-description">ADVANCED</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-border"></div>
+                    <div class="skill-container__small">
+                        <div class="skill-type frame-type">WEB FRAMEWORKS</div>
+                        <div class="bunch frameworks">
+                            <div class="skill link"><i class="devicon devicon-django-plain"></i><span class="skill-description">BEGINNER</span></div>
+                            <div class="skill link"><i class="devicon devicon-vuejs-plain"></i><span class="skill-description">INTERMEDIATE</span></div>          
+                        </div>
+                    </div>
+                </article>
+                
+            </div>
+        </section>
     </main>
 </html>

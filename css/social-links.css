@@ -1,0 +1,68 @@
+.social-links {
+    position: fixed;
+    bottom: 2em;
+    right: 1em;
+    height: fit-content;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    z-index: 9;
+    color: var(--color-beige) !important;
+}
+.tw-slide {
+    animation: tw-slide .3s ease;
+}
+.gh-slide {
+    animation: gh-slide .6s ease;
+}
+.in-slide {
+    animation: in-slide .9s ease;
+}
+.lk-slide {
+    animation: lk-slide 1.2s ease;
+}
+
+.social-links div {
+    height: 6rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-beige);
+    opacity: 0.7;
+    padding: 15px 0;
+    transition: .2s ease;
+    cursor: pointer;
+    position: relative;
+}
+.social-links div:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+.social-links div::after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    top: 2px;
+    right: -2rem;
+    margin: 10% 0;
+    height: 80%;
+    width: 3px;
+}
+.social-links div.tw-slide:hover::after {
+    opacity: 1;
+    animation: colors-bg 4s alternate infinite linear;
+}
+.social-links div.gh-slide:hover::after {
+    opacity: 1;
+    animation: colors-bg 4s alternate infinite linear -1s;
+}
+.social-links div.in-slide:hover::after {
+    opacity: 1;
+    animation: colors-bg 4s alternate infinite linear -2s;
+}
+.social-links div.lk-slide:hover::after {
+    opacity: 1;
+    animation: colors-bg 4s alternate infinite linear -3s;
+}

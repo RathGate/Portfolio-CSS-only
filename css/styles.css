@@ -1,15 +1,20 @@
-@import "nav.css";
+@import "keyframes.css";
+@import "nav-links.css";
 @import "hero-section.css";
-@import "socials.css";
+@import "about-section.css";
+@import "social-links.css";
+@import "background-animation.css";
+
 
 
 :root {
     --color-yellow: #ffd600;
     --color-orange: #ff7a00;
-    --color-red: rgb(255, 0, 105);
+    --color-red: #ff0069;
     --color-purple: #d300c5;
     --color-blue: #7638fa;
-    --background-color: rgb(19, 19, 19);
+    --color-beige: #e4e4e4;
+    --background-color: #131313;
     --screen-height: calc(100vh - 60px);
     --color-gradient: linear-gradient(45deg,
     var(--color-yellow),
@@ -18,37 +23,96 @@
     var(--color-purple) 60%,
     var(--color-blue) 85%);
 }
+a, a:visited, a:active, a:focus {
+    text-decoration: none;
+    color: white;
+}
 
 * {
     box-sizing: border-box;
+    z-index: 5;
 }
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 body {
     height: 100%;
     width: 100%;
     background-color: var(--background-color);
-    color: white;
+    color: var(--color-beige);
     font-family: 'Questrial', sans-serif;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    letter-spacing: .1em;
     margin: 0;
     padding: 0;
 }
 main {
     height: 100%;
-    width: 80%;
+    width: 100%;
     margin: 60px auto 0;
 }
 section {
-    height: var(--screen-height);
-}
-.flex-hz {
+    min-height: var(--screen-height);
+    position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
-.flex-vt {
+h2.section-title {
+    margin: 20px auto;
+    font-family: 'Questrial', sans-serif;
+    font-size: 2em;
+    letter-spacing: .25em;
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    font-weight: normal;
+}
+.section-title .fa-code {
+    position: absolute;
+    top: 0;
+    right: -1.75em;
+    animation: colors 4s alternate linear infinite;
+}
+
+.invisible-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    z-index: 5;
+}
+
+.about-section {
     display: flex;
-    flex-direction: row;
-    z-index: 10;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.link {
+    position: relative;
+}
+a.link {
+    font-weight: bold;
+}
+.link:hover {
+    cursor: pointer;
+}
+.link::after {
+    content: '';
+    width: 0;
+    background-color: white;
+    height: 2px;
+    position: absolute;
+    bottom: -.2em;
+    left: 0;
+    transition: ease 0.25s;
+}
+.link:hover::after {
+    width: 100%;
 }

@@ -4,6 +4,9 @@
 @import "about-section.css";
 @import "social-links.css";
 @import "background-animation.css";
+@import "project-section.css";
+@import "contact-section.css";
+@import 'footer.css';
 
 
 
@@ -50,10 +53,12 @@ body {
 main {
     height: 100%;
     width: 100%;
-    margin: 60px auto 0;
+    margin: 0 auto;
 }
 section {
-    min-height: var(--screen-height);
+    padding-top: 60px;
+    min-height: 100vh;
+    height: fit-content;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -69,6 +74,7 @@ h2.section-title {
     width: fit-content;
     font-weight: normal;
 }
+
 .section-title .fa-code {
     position: absolute;
     top: 0;
@@ -115,4 +121,8 @@ a.link {
 }
 .link:hover::after {
     width: 100%;
+}
+article {
+    margin: 30px 0;
+    padding: 30px 0;
 }

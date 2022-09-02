@@ -1,6 +1,4 @@
-
-
-.about-subsection, .skills-subsection {
+.about-subsection, .skills-subsection, .project-subsection {
     width: 80%;
     margin: 0 auto;
 }
@@ -132,6 +130,7 @@
 
 h3 {
     margin: 0;
+    margin-left: 0.1em;
     position: relative;
     width: fit-content;
     height: fit-content;
@@ -193,7 +192,7 @@ h3.link:hover::after { animation: colors-bg alternate infinite 4s linear}
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size:4em;
+    font-size:3.5em;
     width: 2em;
 }
 .skill:hover .devicon {
@@ -234,6 +233,7 @@ article {
     width: 90%;
     border-bottom: 2px solid;
     transition: 0.5s ease all;
+    z-index: -1;
 }
 .skill-type.soft-type {
     border-image: linear-gradient(45deg, var(--color-yellow), var(--color-orange), var(--color-red)) 1;
